@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://hijia.github.io
+url: http://hi-jia.github.io
 date_format: "ordinal"
 title: Blog
 subtitle: "生活不止眼前的苟且，还有诗和远方。"
@@ -20,7 +20,7 @@ author: Guo jia
 #organization: zkh360.com
 #organization_url: http://www.zkh360.com
 github_username: hi-jia
-location: Bozhou, China
+location: Hefei, China
 email: hijia@gmail.com
 
 # ---------------- #
