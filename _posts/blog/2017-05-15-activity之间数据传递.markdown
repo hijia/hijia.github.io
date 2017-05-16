@@ -1,0 +1,42 @@
+---
+layout:     post
+title:      "5.15"
+subtitle:   " \5.15activity之间数据传递\""
+date:       2017-5-15 17:32:00
+author:     "郭佳"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    安卓学习
+---
+
+> “Yeah It's on. ”
+
+
+# activity之间数据传递 #
+
+##Activity之间的数据传递
+###第一种
+1、Intent intent = new Intent(this, OtherActivity.class);
+		
+		intent.putExtra("name", "zhangsan");
+		intent.putExtra("age", 20);
+		
+		Bundle bun = new Bundle();
+		bun.putString("name", "zhangsan");
+		bun.putInt("age", 20);
+		intent.putExtras(bun);
+		
+		startActivity(intent);
+2、另一个activity通过
+Intent intent = this.getIntent();
+ String name = intent.getStringExtra("name");
+	 int age = intent.getIntExtra("age", 0);
+	
+	 Toast.makeText(this, "name="+name+",age="+age,
+	 Toast.LENGTH_SHORT).show();
+###第二种方式<br/>
+1、	建立一个类继承Application
+2、	在清单文件中注册Application name属性为该类
+3、	在Activity中getApplication,赋值
+4、	在另一个activity取得数据	
