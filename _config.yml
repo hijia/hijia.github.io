@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://mazhuang.org
+url: http://hijia.github.io
 date_format: "ordinal"
 title: Blog
 subtitle: "打码改变人生"
@@ -78,7 +78,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: hijia/hijia.github.io
+repository: hi-jia/hi-jia.github.io
 
 # ---------------- #
 #      Comments    #
